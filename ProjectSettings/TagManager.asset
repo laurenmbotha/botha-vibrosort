@@ -12,6 +12,8 @@ TagManager:
   - Bruisy
   - Alien
   - StartButton
+  - Category 01
+  - bin0
   layers:
   - Default
   - TransparentFX

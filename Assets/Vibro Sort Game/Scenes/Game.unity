@@ -5111,6 +5111,44 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4336629074290926576}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2123469939202475673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123469939202475672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4951c353ebd5d034d85f9bedecc131ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticBuffer_amp:
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1
+  hapticBuffer_freq:
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1
+  isLoopableHaptic: 1
+  objectCategory: 0
 --- !u!33 &2167001018179581522
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5862,6 +5900,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2402346604135687528, guid: 15d02727532d14e43b42e6f23678435f,
+        type: 3}
+      propertyPath: m_TagString
+      value: bin0
       objectReference: {fileID: 0}
     - target: {fileID: 4137136313126982068, guid: 15d02727532d14e43b42e6f23678435f,
         type: 3}
