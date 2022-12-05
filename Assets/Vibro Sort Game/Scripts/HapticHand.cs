@@ -21,6 +21,26 @@ public class HapticHand : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "bin0")
+        {
+            OVRInput.SetControllerVibration(.2f, .2f, OVRInput.Controller.RTouch);
+        }
+        if (other.gameObject.tag == "bin1")
+        {
+            OVRInput.SetControllerVibration(.4f, .4f, OVRInput.Controller.RTouch);
+        }
+        if (other.gameObject.tag == "bin2")
+        {
+            OVRInput.SetControllerVibration(.6f, .6f, OVRInput.Controller.RTouch);
+        }
+        if (other.gameObject.tag == "bin3")
+        {
+            OVRInput.SetControllerVibration(.8f, .8f, OVRInput.Controller.RTouch);
+        }
+        if (other.gameObject.tag == "bin4")
+        {
+            OVRInput.SetControllerVibration(1f, 1f, OVRInput.Controller.RTouch);
+        }
         if (other.gameObject.layer == LayerMask.NameToLayer("Haptic")) {
             HapticInteractable currentHapticObject = other.gameObject.GetComponent<HapticInteractable>();
             if (controller == OVRInput.Controller.LTouch) {

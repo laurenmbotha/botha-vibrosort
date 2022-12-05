@@ -1366,6 +1366,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2402346604135687528, guid: 15d02727532d14e43b42e6f23678435f,
+        type: 3}
+      propertyPath: m_TagString
+      value: bin1
+      objectReference: {fileID: 0}
     - target: {fileID: 4137136313126982068, guid: 15d02727532d14e43b42e6f23678435f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3247,6 +3252,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2402346604135687528, guid: 15d02727532d14e43b42e6f23678435f,
+        type: 3}
+      propertyPath: m_TagString
+      value: bin2
+      objectReference: {fileID: 0}
     - target: {fileID: 4137136313126982068, guid: 15d02727532d14e43b42e6f23678435f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3331,6 +3341,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bin (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2402346604135687528, guid: 15d02727532d14e43b42e6f23678435f,
+        type: 3}
+      propertyPath: m_TagString
+      value: bin3
       objectReference: {fileID: 0}
     - target: {fileID: 4137136313126982068, guid: 15d02727532d14e43b42e6f23678435f,
         type: 3}
@@ -4664,6 +4679,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bin (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2402346604135687528, guid: 15d02727532d14e43b42e6f23678435f,
+        type: 3}
+      propertyPath: m_TagString
+      value: bin4
       objectReference: {fileID: 0}
     - target: {fileID: 4137136313126982068, guid: 15d02727532d14e43b42e6f23678435f,
         type: 3}

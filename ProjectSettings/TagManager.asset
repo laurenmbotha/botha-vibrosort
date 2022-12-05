@@ -14,6 +14,10 @@ TagManager:
   - StartButton
   - Category 01
   - bin0
+  - bin1
+  - bin2
+  - bin3
+  - bin4
   layers:
   - Default
   - TransparentFX

@@ -14,8 +14,8 @@ public enum ObjectCategory {
 
 public class ObjectGenerator : MonoBehaviour
 {
-    public int numObjsToSpawn = 20;
-    public int minPerCat = 2;
+    public int numObjsToSpawn = 5;
+    public int minPerCat = 1;
 
     public Scoreboard scoreboard;
     private int leftToSpawn;

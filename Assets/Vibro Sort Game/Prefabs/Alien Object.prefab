@@ -134,26 +134,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hapticBuffer_amp:
   - 1
+  - 0
+  - 1
   - 1
   - 0
   - 0
   - 0
-  - 0.5
-  - 1
-  - 0.5
-  - 0.5
+  - 0
+  - 0
   - 0
   - 0
   hapticBuffer_freq:
+  - 0.5
+  - 0
   - 1
   - 1
   - 0
   - 0
   - 0
-  - 0.5
-  - 1
-  - 0.5
-  - 0.5
+  - 0
+  - 0
   - 0
   - 0
   isLoopableHaptic: 0
