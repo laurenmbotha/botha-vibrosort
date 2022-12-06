@@ -21,6 +21,20 @@ public class HapticHand : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Haptic")) {
+            HapticInteractable currentHapticObject = other.gameObject.GetComponent<HapticInteractable>();
+            if (controller == OVRInput.Controller.LTouch) {
+                hM.LeftHapticsBuffer_amp = currentHapticObject.GetHapticBufferAmplitudes();
+                hM.LeftHapticsBuffer_freq = currentHapticObject.GetHapticBufferFrequencies();
+                hM.leftHapticLoop = currentHapticObject.GetIsLoopable();
+                hM.leftHapticStartTime = Time.time;
+            } else if (controller == OVRInput.Controller.RTouch) {
+                hM.RightHapticsBuffer_amp = currentHapticObject.GetHapticBufferAmplitudes();
+                hM.RightHapticsBuffer_freq = currentHapticObject.GetHapticBufferFrequencies();
+                hM.rightHapticLoop = currentHapticObject.GetIsLoopable();
+                hM.rightHapticStartTime = Time.time;
+            }
+        }
         if (other.gameObject.tag == "bin0")
         {
             OVRInput.SetControllerVibration(.2f, .2f, OVRInput.Controller.RTouch);
@@ -40,20 +54,6 @@ public class HapticHand : MonoBehaviour
         if (other.gameObject.tag == "bin4")
         {
             OVRInput.SetControllerVibration(1f, 1f, OVRInput.Controller.RTouch);
-        }
-        if (other.gameObject.layer == LayerMask.NameToLayer("Haptic")) {
-            HapticInteractable currentHapticObject = other.gameObject.GetComponent<HapticInteractable>();
-            if (controller == OVRInput.Controller.LTouch) {
-                hM.LeftHapticsBuffer_amp = currentHapticObject.GetHapticBufferAmplitudes();
-                hM.LeftHapticsBuffer_freq = currentHapticObject.GetHapticBufferFrequencies();
-                hM.leftHapticLoop = currentHapticObject.GetIsLoopable();
-                hM.leftHapticStartTime = Time.time;
-            } else if (controller == OVRInput.Controller.RTouch) {
-                hM.RightHapticsBuffer_amp = currentHapticObject.GetHapticBufferAmplitudes();
-                hM.RightHapticsBuffer_freq = currentHapticObject.GetHapticBufferFrequencies();
-                hM.rightHapticLoop = currentHapticObject.GetIsLoopable();
-                hM.rightHapticStartTime = Time.time;
-            }
         }
     }
     private void OnTriggerExit(Collider other) {

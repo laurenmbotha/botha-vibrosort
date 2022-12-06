@@ -176,3 +176,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   binCategory: 0
   sb: {fileID: 0}
+  hM: {fileID: 0}
+  controller: 0

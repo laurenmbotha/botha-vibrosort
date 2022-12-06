@@ -5,32 +5,14 @@ using UnityEngine;
 public class HapticInteractable : MonoBehaviour
 {
     public float[] hapticBuffer_amp = new float[] {
-        1f,
-        1f,
-        0f,
-        0f,
-        0f,
-        0.5f,
-        1f,
-        0.5f,
-        0.5f,
-        0f,
-        0f
+        1f
     };
 
+
     public float[] hapticBuffer_freq = new float[] {
-        1f,
-        1f,
-        0f,
-        0f,
-        0f,
-        0.5f,
-        1f,
-        0.5f,
-        0.5f,
-        0f,
-        0f
+        1f
     };
+
 
     public bool isLoopableHaptic = false;
 

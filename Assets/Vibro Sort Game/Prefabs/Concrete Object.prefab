@@ -219,15 +219,15 @@ MonoBehaviour:
   - 1
   - 1
   - 0
-  - 0.5
+  - 1
   - 0
-  - 0.5
-  - 0
-  - 0
+  - 1
   - 0
   - 0
   - 0
-  isLoopableHaptic: 0
+  - 0
+  - 0
+  isLoopableHaptic: 1
   objectCategory: 0
 --- !u!114 &9172895074192396978
 MonoBehaviour:

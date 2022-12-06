@@ -47,6 +47,10 @@ public class Scoreboard : MonoBehaviour
         }
 
         if (correctScore == numObjectsToSort) {
+            OVRInput.SetControllerVibration(1f, 1f, OVRInput.Controller.LTouch);
+            OVRInput.SetControllerVibration(1f, 1f, OVRInput.Controller.RTouch);
+            OVRInput.SetControllerVibration(1f, 1f, OVRInput.Controller.LTouch);
+            OVRInput.SetControllerVibration(1f, 1f, OVRInput.Controller.RTouch);
             EndGame();
         }
     }
